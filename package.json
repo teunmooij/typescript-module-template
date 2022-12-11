@@ -9,7 +9,8 @@
     "lint:fix": "eslint src/**/*.ts --quiet --fix",
     "test": "jest -c jest.config.ts",
     "test:coverage": "jest -c jest.config.ts --verbose --collectCoverage",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@types/jest": "^29.2.4",
@@ -32,8 +33,8 @@
     "typescript": "^4.9.3"
   },
   "lint-staged": {
-    "*.{js,ts}": "eslint --cache --fix",
-    "*.{js,ts,md}": "prettier --write"
+    "**/*.{js,ts}": "eslint --cache --fix",
+    "**/*.{js,ts,md}": "prettier --write"
   },
   "repository": {
     "type": "git",

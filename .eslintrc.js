@@ -23,6 +23,7 @@ module.exports = {
     'plugin:@typescript-eslint/recommended', // Uses the recommended rules from @typescript-eslint/eslint-plugin
     'plugin:prettier/recommended',
     'plugin:import/recommended',
+    'plugin:promise/recommended',
     'plugin:import/typescript',
     'prettier',
   ],
